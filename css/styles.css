@@ -26,11 +26,16 @@ body {
 
 .card-photo {
 	background-color: hsl(277, 64%, 61%);
+	overflow: hidden;
 }
 
 .card-photo > img {
 	height: 100%;
 	opacity: 0.6;
+}
+
+.image-mobile {
+	display: none;
 }
 
 .card-content {
@@ -81,8 +86,12 @@ body {
 		text-align: center;
 	}
 
-	.card .card-photo > img {
-		opacity: 0.6;
+	.image-desktop {
+		display: none;
+	}
+
+	.image-mobile {
+		display: block;
 	}
 	.card-content {
 		padding: 30px;
